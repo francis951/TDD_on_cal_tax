@@ -1,10 +1,11 @@
-# If you want a bit more practice at test first, write a tax calculator that calculates tax using the following brackets
- 
-# If earnings < 12000 per year, pay no tax
-# then with earnings between 12,000 and 36,000 pay 20% tax
-# then with earnings greater than 36000 per year, pay 40% tax
+"""A function to calculate tax on certain amount per year"""
 
-# Use a test first approach.  Commit at least after every passing test
 
 def cal_tax(earning):
-    pass
+    """The if conditions to calculate the paid tax :param: earning (int) which is then rounded"""
+    if earning < 12000:
+        return earning
+    if earning <= 36000:
+        return round((earning * 0.2), 2)
+    # else:
+    return round((earning * 0.4), 2)

@@ -1,6 +1,9 @@
 """
+import a function cal_tax from cal_tax.py
 """
-from cal_tax import tax
+from cal_tax import cal_tax
 
 def test_cal_tax():
-    cal_tax(12000) == 12000
+    """Testing for tax of those earning less than or equal 12000.00"""
+    assert cal_tax(12000) == 2400.0
+    
